@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section>
+      <form action="" id="resgitration" method="POST">
+        <div>
+          <input
+            type="text"
+            name="username"
+            placeholder="eneter your username"
+            id="usernamefield"
+          />
+          <p class="error-text" id="error-username"></p>
+        </div>
+        <div>
+          <input
+            type="password"
+            name="passw"
+            placeholder="eneter your password"
+            id="passwordfield"
+          />
+          <i class="fa-regular fa-eye" id="showIcon"></i>
+          <p class="error-text" id="error-passw"></p>
+        </div>
+        <div>
+          <input
+            type="password"
+            name="passw2"
+            placeholder="repeat your password"
+            id="passwordfield2"
+          />
+          <p class="error-text" id="error-passw2"></p>
+        </div>
+        <div>
+          <input type="email" id="emailfield" placeholder="enter email" />
+          <p id="emailError"></p>
+        </div>
+        <div>
+          <input type="radio" name="gender" class="radio-class" />
+          <label for="">Male</label>
+          <input type="radio" name="gender" class="radio-class"/>
+          <label for="">Female</label>
+          <p class="error-text" id="error-gender"></p>
+        </div>
+        <div>
+          <input type="checkbox" id="agree" name="check" />
+          <label for="agree">i agree terms and conditions</label>
+          <p class="error-text" id="error-check"></p>
+        </div>
+        <button type="submit">submit</button>
+      </form>
+    </section>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="js/form.js"></script>
+  </body>
+</html>
